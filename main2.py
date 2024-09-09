@@ -52,7 +52,7 @@ async def upload_file_page():
 
 @app.post("/")
 async def upload_file(file: UploadFile, background_tasks: BackgroundTasks):
-    file_path = f"temp_{file.filename}"  # Temporary local file path
+    file_path = f"temp_{file.filename}"  # Temporary local file path 
     file_name = file.filename
     metadata = {
         "Author": "Ashish Vaswani",
@@ -79,3 +79,7 @@ async def upload_file(file: UploadFile, background_tasks: BackgroundTasks):
         </body>
     </html>
     """)
+
+
+
+
